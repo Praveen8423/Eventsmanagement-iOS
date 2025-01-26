@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		314869962D43CCDE00ACF1D4 /* JackpassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314869952D43CCDE00ACF1D4 /* JackpassApp.swift */; };
+		314869982D43CCDE00ACF1D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314869972D43CCDE00ACF1D4 /* ContentView.swift */; };
+		3148699A2D43CCDF00ACF1D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314869992D43CCDF00ACF1D4 /* Assets.xcassets */; };
+		3148699D2D43CCDF00ACF1D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3148699C2D43CCDF00ACF1D4 /* Preview Assets.xcassets */; };
+		314869A72D43CCDF00ACF1D4 /* JackpassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314869A62D43CCDF00ACF1D4 /* JackpassTests.swift */; };
+		314869B12D43CCDF00ACF1D4 /* JackpassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314869B02D43CCDF00ACF1D4 /* JackpassUITests.swift */; };
+		314869B32D43CCDF00ACF1D4 /* JackpassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314869B22D43CCDF00ACF1D4 /* JackpassUITestsLaunchTests.swift */; };
+		314869C42D43CD4400ACF1D4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314869C32D43CD4400ACF1D4 /* Event.swift */; };
+		314869C72D43CD6B00ACF1D4 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314869C62D43CD6B00ACF1D4 /* EventViewModel.swift */; };
+		314869C92D43CD9A00ACF1D4 /* EventCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314869C82D43CD9A00ACF1D4 /* EventCreationView.swift */; };
+		314869CB2D43CDB300ACF1D4 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314869CA2D43CDB300ACF1D4 /* EventListView.swift */; };
+		314869CD2D43CDCE00ACF1D4 /* MediaPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314869CC2D43CDCE00ACF1D4 /* MediaPicker.swift */; };
+		314869CF2D43CE0C00ACF1D4 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314869CE2D43CE0C00ACF1D4 /* PersistenceController.swift */; };
+		314869D22D43CE3300ACF1D4 /* EventCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 314869D02D43CE3300ACF1D4 /* EventCoreData.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		314869A32D43CCDF00ACF1D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3148698A2D43CCDE00ACF1D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 314869912D43CCDE00ACF1D4;
+			remoteInfo = Jackpass;
+		};
+		314869AD2D43CCDF00ACF1D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3148698A2D43CCDE00ACF1D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 314869912D43CCDE00ACF1D4;
+			remoteInfo = Jackpass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		314869922D43CCDE00ACF1D4 /* Jackpass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jackpass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		314869952D43CCDE00ACF1D4 /* JackpassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackpassApp.swift; sourceTree = "<group>"; };
+		314869972D43CCDE00ACF1D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		314869992D43CCDF00ACF1D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3148699C2D43CCDF00ACF1D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		314869A22D43CCDF00ACF1D4 /* JackpassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JackpassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		314869A62D43CCDF00ACF1D4 /* JackpassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackpassTests.swift; sourceTree = "<group>"; };
+		314869AC2D43CCDF00ACF1D4 /* JackpassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JackpassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		314869B02D43CCDF00ACF1D4 /* JackpassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackpassUITests.swift; sourceTree = "<group>"; };
+		314869B22D43CCDF00ACF1D4 /* JackpassUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JackpassUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		314869C32D43CD4400ACF1D4 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		314869C62D43CD6B00ACF1D4 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		314869C82D43CD9A00ACF1D4 /* EventCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCreationView.swift; sourceTree = "<group>"; };
+		314869CA2D43CDB300ACF1D4 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+		314869CC2D43CDCE00ACF1D4 /* MediaPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPicker.swift; sourceTree = "<group>"; };
+		314869CE2D43CE0C00ACF1D4 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		314869D12D43CE3300ACF1D4 /* EventCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventCoreData.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3148698F2D43CCDE00ACF1D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3148699F2D43CCDF00ACF1D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		314869A92D43CCDF00ACF1D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		314869892D43CCDE00ACF1D4 = {
+			isa = PBXGroup;
+			children = (
+				314869942D43CCDE00ACF1D4 /* Jackpass */,
+				314869A52D43CCDF00ACF1D4 /* JackpassTests */,
+				314869AF2D43CCDF00ACF1D4 /* JackpassUITests */,
+				314869932D43CCDE00ACF1D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		314869932D43CCDE00ACF1D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				314869922D43CCDE00ACF1D4 /* Jackpass.app */,
+				314869A22D43CCDF00ACF1D4 /* JackpassTests.xctest */,
+				314869AC2D43CCDF00ACF1D4 /* JackpassUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		314869942D43CCDE00ACF1D4 /* Jackpass */ = {
+			isa = PBXGroup;
+			children = (
+				314869C02D43CD2700ACF1D4 /* CoreDataStack */,
+				314869BF2D43CD1C00ACF1D4 /* Presentation */,
+				314869952D43CCDE00ACF1D4 /* JackpassApp.swift */,
+				314869972D43CCDE00ACF1D4 /* ContentView.swift */,
+				314869992D43CCDF00ACF1D4 /* Assets.xcassets */,
+				3148699B2D43CCDF00ACF1D4 /* Preview Content */,
+			);
+			path = Jackpass;
+			sourceTree = "<group>";
+		};
+		3148699B2D43CCDF00ACF1D4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3148699C2D43CCDF00ACF1D4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		314869A52D43CCDF00ACF1D4 /* JackpassTests */ = {
+			isa = PBXGroup;
+			children = (
+				314869A62D43CCDF00ACF1D4 /* JackpassTests.swift */,
+			);
+			path = JackpassTests;
+			sourceTree = "<group>";
+		};
+		314869AF2D43CCDF00ACF1D4 /* JackpassUITests */ = {
+			isa = PBXGroup;
+			children = (
+				314869B02D43CCDF00ACF1D4 /* JackpassUITests.swift */,
+				314869B22D43CCDF00ACF1D4 /* JackpassUITestsLaunchTests.swift */,
+			);
+			path = JackpassUITests;
+			sourceTree = "<group>";
+		};
+		314869BF2D43CD1C00ACF1D4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				314869C52D43CD5D00ACF1D4 /* View Model */,
+				314869C22D43CD3800ACF1D4 /* Model */,
+				314869C12D43CD3100ACF1D4 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		314869C02D43CD2700ACF1D4 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				314869CE2D43CE0C00ACF1D4 /* PersistenceController.swift */,
+				314869D02D43CE3300ACF1D4 /* EventCoreData.xcdatamodeld */,
+			);
+			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		314869C12D43CD3100ACF1D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				314869C82D43CD9A00ACF1D4 /* EventCreationView.swift */,
+				314869CA2D43CDB300ACF1D4 /* EventListView.swift */,
+				314869CC2D43CDCE00ACF1D4 /* MediaPicker.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		314869C22D43CD3800ACF1D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				314869C32D43CD4400ACF1D4 /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		314869C52D43CD5D00ACF1D4 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				314869C62D43CD6B00ACF1D4 /* EventViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		314869912D43CCDE00ACF1D4 /* Jackpass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 314869B62D43CCDF00ACF1D4 /* Build configuration list for PBXNativeTarget "Jackpass" */;
+			buildPhases = (
+				3148698E2D43CCDE00ACF1D4 /* Sources */,
+				3148698F2D43CCDE00ACF1D4 /* Frameworks */,
+				314869902D43CCDE00ACF1D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jackpass;
+			productName = Jackpass;
+			productReference = 314869922D43CCDE00ACF1D4 /* Jackpass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		314869A12D43CCDF00ACF1D4 /* JackpassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 314869B92D43CCDF00ACF1D4 /* Build configuration list for PBXNativeTarget "JackpassTests" */;
+			buildPhases = (
+				3148699E2D43CCDF00ACF1D4 /* Sources */,
+				3148699F2D43CCDF00ACF1D4 /* Frameworks */,
+				314869A02D43CCDF00ACF1D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				314869A42D43CCDF00ACF1D4 /* PBXTargetDependency */,
+			);
+			name = JackpassTests;
+			productName = JackpassTests;
+			productReference = 314869A22D43CCDF00ACF1D4 /* JackpassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		314869AB2D43CCDF00ACF1D4 /* JackpassUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 314869BC2D43CCDF00ACF1D4 /* Build configuration list for PBXNativeTarget "JackpassUITests" */;
+			buildPhases = (
+				314869A82D43CCDF00ACF1D4 /* Sources */,
+				314869A92D43CCDF00ACF1D4 /* Frameworks */,
+				314869AA2D43CCDF00ACF1D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				314869AE2D43CCDF00ACF1D4 /* PBXTargetDependency */,
+			);
+			name = JackpassUITests;
+			productName = JackpassUITests;
+			productReference = 314869AC2D43CCDF00ACF1D4 /* JackpassUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3148698A2D43CCDE00ACF1D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					314869912D43CCDE00ACF1D4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					314869A12D43CCDF00ACF1D4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 314869912D43CCDE00ACF1D4;
+					};
+					314869AB2D43CCDF00ACF1D4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 314869912D43CCDE00ACF1D4;
+					};
+				};
+			};
+			buildConfigurationList = 3148698D2D43CCDE00ACF1D4 /* Build configuration list for PBXProject "Jackpass" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 314869892D43CCDE00ACF1D4;
+			productRefGroup = 314869932D43CCDE00ACF1D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				314869912D43CCDE00ACF1D4 /* Jackpass */,
+				314869A12D43CCDF00ACF1D4 /* JackpassTests */,
+				314869AB2D43CCDF00ACF1D4 /* JackpassUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		314869902D43CCDE00ACF1D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3148699D2D43CCDF00ACF1D4 /* Preview Assets.xcassets in Resources */,
+				3148699A2D43CCDF00ACF1D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		314869A02D43CCDF00ACF1D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		314869AA2D43CCDF00ACF1D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3148698E2D43CCDE00ACF1D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314869CD2D43CDCE00ACF1D4 /* MediaPicker.swift in Sources */,
+				314869982D43CCDE00ACF1D4 /* ContentView.swift in Sources */,
+				314869CB2D43CDB300ACF1D4 /* EventListView.swift in Sources */,
+				314869C72D43CD6B00ACF1D4 /* EventViewModel.swift in Sources */,
+				314869C42D43CD4400ACF1D4 /* Event.swift in Sources */,
+				314869962D43CCDE00ACF1D4 /* JackpassApp.swift in Sources */,
+				314869D22D43CE3300ACF1D4 /* EventCoreData.xcdatamodeld in Sources */,
+				314869C92D43CD9A00ACF1D4 /* EventCreationView.swift in Sources */,
+				314869CF2D43CE0C00ACF1D4 /* PersistenceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3148699E2D43CCDF00ACF1D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314869A72D43CCDF00ACF1D4 /* JackpassTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		314869A82D43CCDF00ACF1D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314869B32D43CCDF00ACF1D4 /* JackpassUITestsLaunchTests.swift in Sources */,
+				314869B12D43CCDF00ACF1D4 /* JackpassUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		314869A42D43CCDF00ACF1D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 314869912D43CCDE00ACF1D4 /* Jackpass */;
+			targetProxy = 314869A32D43CCDF00ACF1D4 /* PBXContainerItemProxy */;
+		};
+		314869AE2D43CCDF00ACF1D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 314869912D43CCDE00ACF1D4 /* Jackpass */;
+			targetProxy = 314869AD2D43CCDF00ACF1D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		314869B42D43CCDF00ACF1D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		314869B52D43CCDF00ACF1D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		314869B72D43CCDF00ACF1D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jackpass/Preview Content\"";
+				DEVELOPMENT_TEAM = NTK2YJ2FVJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Jackpass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		314869B82D43CCDF00ACF1D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jackpass/Preview Content\"";
+				DEVELOPMENT_TEAM = NTK2YJ2FVJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Jackpass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		314869BA2D43CCDF00ACF1D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NTK2YJ2FVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.JackpassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jackpass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jackpass";
+			};
+			name = Debug;
+		};
+		314869BB2D43CCDF00ACF1D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NTK2YJ2FVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.JackpassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jackpass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jackpass";
+			};
+			name = Release;
+		};
+		314869BD2D43CCDF00ACF1D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NTK2YJ2FVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.JackpassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jackpass;
+			};
+			name = Debug;
+		};
+		314869BE2D43CCDF00ACF1D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NTK2YJ2FVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.JackpassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jackpass;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3148698D2D43CCDE00ACF1D4 /* Build configuration list for PBXProject "Jackpass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314869B42D43CCDF00ACF1D4 /* Debug */,
+				314869B52D43CCDF00ACF1D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		314869B62D43CCDF00ACF1D4 /* Build configuration list for PBXNativeTarget "Jackpass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314869B72D43CCDF00ACF1D4 /* Debug */,
+				314869B82D43CCDF00ACF1D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		314869B92D43CCDF00ACF1D4 /* Build configuration list for PBXNativeTarget "JackpassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314869BA2D43CCDF00ACF1D4 /* Debug */,
+				314869BB2D43CCDF00ACF1D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		314869BC2D43CCDF00ACF1D4 /* Build configuration list for PBXNativeTarget "JackpassUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314869BD2D43CCDF00ACF1D4 /* Debug */,
+				314869BE2D43CCDF00ACF1D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		314869D02D43CE3300ACF1D4 /* EventCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				314869D12D43CE3300ACF1D4 /* EventCoreData.xcdatamodel */,
+			);
+			currentVersion = 314869D12D43CE3300ACF1D4 /* EventCoreData.xcdatamodel */;
+			name = EventCoreData.xcdatamodeld;
+			path = /Users/praveen.sehgalalveo.fit/Documents/new_workspace/Jackpass/Jackpass/CoreDataStack/EventCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3148698A2D43CCDE00ACF1D4 /* Project object */;
+}
